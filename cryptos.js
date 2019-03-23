@@ -1,3 +1,5 @@
+// Crypto Directory
+// Edit locally but DO NOT COMMIT
 
 const CRYPTOS = [
   {
@@ -12,6 +14,9 @@ const CRYPTOS = [
     model: require('./models/cryptos/doge-wallet'),
     router: require('./routes/cryptos/doge-routes')
   }
+  /*
+  { your crypto here }
+  */
 ]
 
 module.exports = CRYPTOS;

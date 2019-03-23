@@ -1,3 +1,5 @@
+// CORE FILE DO NOT EDIT
+
 let mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 let bcrypt = require('bcrypt');

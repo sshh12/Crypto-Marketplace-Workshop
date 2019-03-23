@@ -1,3 +1,5 @@
+// CORE FILE DO NOT EDIT
+
 let express = require('express');
 let router = express.Router();
 let bcrypt = require('bcrypt');
@@ -5,12 +7,12 @@ let bcrypt = require('bcrypt');
 let User = require('../models/user');
 
 
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
   res.render('index');
 });
 
 
-router.post('/login', async (req, res, next) => {
+router.post('/login', async (req, res) => {
 
   let username = req.body.username;
   let password = req.body.password;
@@ -27,7 +29,7 @@ router.post('/login', async (req, res, next) => {
 });
 
 
-router.post('/register', async (req, res, next) => {
+router.post('/register', async (req, res) => {
 
   let username = req.body.username;
   let password = req.body.password;

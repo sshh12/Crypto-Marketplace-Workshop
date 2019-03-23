@@ -1,9 +1,11 @@
+// EXAMPLE FILE DO NOT EDIT
+
 let express = require('express');
 let router = express.Router();
 
 let DogeWallet = require('../../models/cryptos/doge-wallet');
 
-router.get('/cryptos/DOGE', async (req, res, next) => {
+router.get('/cryptos/DOGE', async (req, res) => {
 
   let user = req.session.user;
   let wallet = await DogeWallet.getByUser(req.session.user);
