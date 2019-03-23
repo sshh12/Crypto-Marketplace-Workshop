@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+  <h3>Welcome to the Crypto Marketplace.</h3>
+
+  <% if(msg) { %>
+    <marquee><h4 style='color:red'><%= msg %></h4></marquee>
+  <% } %>
+
+  <% if(user) { %>
+
+    Hi <%= user.username %>.
+
+    <ul>
+      <% cryptos.forEach((crypto) => { %>
+        <li><a href="/cryptos/<%= crypto.symbol %>"><%= crypto.name %> (<%= crypto.symbol %>)</a></li>
+      <% }); %>
+    </ul>
+
+  <% } else { %>
+
+    <span>Login</span>
+    <form method="POST" action="/login">
+      <input type="text" name="username" placeholder="username"/>
+      <input type="password" name="password" placeholder="password"/>
+      <input type="submit" name="submut"/>
+    </form>
+    <br><span>Register</span>
+    <form method="POST" action="/register">
+      <input type="text" name="username" placeholder="username"/>
+      <input type="password" name="password" placeholder="password"/>
+      <input type="submit" name="submut"/>
+    </form>
+
+  <% } %>
+
+</body>
+
+</html>

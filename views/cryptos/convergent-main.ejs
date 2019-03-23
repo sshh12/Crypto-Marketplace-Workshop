@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+  <h3>Buy Convergent Coin!</h3>
+
+  <% if(msg) { %>
+    <marquee><h4 style='color:red'><%= msg %></h4></marquee>
+  <% } %>
+
+  <% if(user) { %>
+
+    Hi <%= user.username %>! Buy Convergent Coin today!
+
+    <a href="/cryptos/CVGT/users">Be like these people</a>.
+
+    <img style="width:10%;filter:invert(100%);" src="http://www.txconvergent.org/assets/img/txc/logo-light.png" />
+
+    <br><br>
+    <% if(locals.wallet) { %>
+      You have: <b><%= wallet.balance %> Convergent Coin</b>.
+    <% } %>
+
+    <hr>
+
+    <h4>Trades:</h4>
+    <ul>
+      <li>
+        <form method="POST" action="/cryptos/CVGT">
+          <input type="hidden" name="trade" value="dogetoconvergent"/>
+          <input type="submit" value="Buy 2 Convergent Coin with 1 Doge Coin"/>
+        </form>
+      </li>
+    </ul>
+
+  <% } else { %>
+
+    <b>You need to be logged in to be here.<b>
+
+  <% } %>
+
+</body>
+
+</html>
