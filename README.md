@@ -2,9 +2,9 @@
 
 [Live Code](https://crypto-marketplace-workshop.herokuapp.com/)
 
-Create a fake crypto using Express and MongoDB.
+Create and exchange fake crypto using Express and MongoDB.
 
-## Step 0
+## Step 0 (Setup)
 
 0. Come up with the name (and symbol) of your crypto.
 1. Get Git `git --version`
@@ -58,18 +58,26 @@ kitty.save().then(() => console.log('meow'));
 ##### Cons
 * Transactions can be messy
 
-## Step 1
+## Step 1 (MongoDB)
 
 Create a new schema for your crypto. Edit `models/cryptos/<crypto-name>-wallet.js`.
 
-## Step 2
+## Step 2 (EJS/Templating)
 
 Create the frontend for your crypto. Edit `views/cryptos/<crypto-name>-main.ejs`.
 
-## Step 3
+## Step 3 (Express)
 
 Create routes for your crypto. Edit `routes/cryptos/<crypto-name>-routes.js`.
 
 ## Step 4
 
 Add your crypto to `cryptos.js`
+
+## Step 5
+
+Add routes to exchange with other cryptos.
+
+## Step 6
+
+Commit your changes to this repo and see if it's [here](https://crypto-marketplace-workshop.herokuapp.com/).
