@@ -50,7 +50,7 @@ router.get('/cryptos/CVGT', async (req, res) => {
 
 router.get('/cryptos/CVGT/users', async (req, res, next) => {
   let wallets = await ConvergentWallet.getAll();
-  let users = wallets.map((w) => w.owner);
+  let users = wallets.map((w) => [w, w.owner]);
   return res.render('cryptos/convergent-users', {users: users});
 });
 
