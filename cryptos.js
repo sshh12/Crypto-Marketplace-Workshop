@@ -13,10 +13,25 @@ const CRYPTOS = [
     symbol: 'DOGE',
     model: require('./models/cryptos/doge-wallet'),
     router: require('./routes/cryptos/doge-routes')
+  },
+  {
+    name: 'HarshCoin',
+    symbol: 'HARC',
+    model: require('./models/cryptos/harsh-wallet'),
+    router: require('./routes/cryptos/harsh-routes')
+  },
+  {
+    name: 'ShivCoin',
+    symbol: 'SHIV',
+    model: require('./models/cryptos/my-wallet'),
+    router: require('./routes/cryptos/my-routes')
+  },
+  {
+    name: 'Fizzcoin',
+    symbol: 'FIZZ',
+    model: require('./models/cryptos/FizzcoinWallet'),
+    router: require('./routes/cryptos/fizzcoin')
   }
-  /*
-  { your crypto here }
-  */
 ]
 
 module.exports = CRYPTOS;
