@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+  <h3>Buy Harsh Coin!</h3>
+
+  <% if(msg) { %>
+    <marquee><h4 style='color:red'><%= msg %></h4></marquee>
+  <% } %>
+
+  <% if(user) { %>
+
+    Hi <%= user.username %>! Buy Harsh Coin today!
+
+    <img style="width:10%;" src="https://i2.wp.com/theoofy.com/wp-content/uploads/2018/10/Dogecoin-DOGE-Price-Is-Raising-Will-The-Increase.jpg?fit=805%2C452&ssl=1" />
+
+    <br><br>
+    <% if(locals.wallet) { %>
+      You have: <b><%= wallet.balance %> Harsh Coin. That's a lot!!!<b>.
+    <% } %>
+
+  <% } else { %>
+
+    <b>You need to be logged in to be here.<b>
+
+  <% } %>
+
+</body>
+
+</html>
