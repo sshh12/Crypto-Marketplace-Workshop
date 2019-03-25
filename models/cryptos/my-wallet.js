@@ -102,7 +102,7 @@ ShivWalletSchema.statics.getAll = (user) => {
 }
 
 
-let ShivWallet = mongoose.model('ConvergentWallet', ConvergentWalletSchema);
+let ShivWallet = mongoose.model('ShivWallet', ConvergentWalletSchema);
 
 
 module.exports = ShivWallet;
