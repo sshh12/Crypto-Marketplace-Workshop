@@ -130,7 +130,7 @@ let\cf4  express \cf2 =\cf4  \cf5 require\cf4 (\cf6 'express'\cf4 );\cb1 \cell
 \pard\intbl\itap1\pardeftab720\partightenfactor0
 \cf7 \cell 
 \pard\intbl\itap1\pardeftab720\partightenfactor0
-\cf4 \cb3     DogeWallet.\cf8 create\cf4 (walletData, \cf2 async\cf4  (error, wallet) \cf2 =>\cf4  \{\cb1 \cell \row
+\cf4 \cb3     FizzcoinWallet.\cf8 create\cf4 (walletData, \cf2 async\cf4  (error, wallet) \cf2 =>\cf4  \{\cb1 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
 \clvertalt \clshdrawnil \clwWidth1000\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
