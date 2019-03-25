@@ -14,7 +14,7 @@
 
   <ol>
   <% users.forEach((user) => { %>
-    <li><%= user.username %></li>
+    <li><%= user[1].username %> | <%= user[0].balance %></li>
   <% }) %>
   </ol>
 
