@@ -3,10 +3,10 @@
 
 const CRYPTOS = [
   {
-    name: 'ConvergentCoin',
+    name: 'SavvyCoin',
     symbol: 'CVGT',
-    model: require('./models/cryptos/convergent-wallet'),
-    router: require('./routes/cryptos/convergent-routes')
+    model: require('./models/cryptos/savvy-wallet'),
+    router: require('./routes/cryptos/savvy-routes')
   },
   {
     name: 'DogeCoin',
@@ -15,6 +15,12 @@ const CRYPTOS = [
     router: require('./routes/cryptos/doge-routes')
   },
   {
+    name: 'CoinyeWest',
+    symbol: 'MONE',
+    model: require('./models/cryptos/coinyewest-wallet'),
+    router: require('./routes/cryptos/coinyewest-routes')
+  },
+    {
     name: 'HarshCoin',
     symbol: 'HARC',
     model: require('./models/cryptos/harsh-wallet'),
@@ -31,6 +37,12 @@ const CRYPTOS = [
     symbol: 'FIZZ',
     model: require('./models/cryptos/FizzcoinWallet'),
     router: require('./routes/cryptos/fizzcoin')
+  },
+  {
+    name: 'SavvyCoin',
+    symbol: 'SAVVY',
+    model: require('./models/cryptos/savvy-wallet'),
+    router: require('./routes/cryptos/savvy-routes copy')
   }
 ]
 

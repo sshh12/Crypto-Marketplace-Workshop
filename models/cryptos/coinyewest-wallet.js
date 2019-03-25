@@ -75,7 +75,7 @@ let mongoose = require('mongoose'),
 let queryify = require('../queries');
 
 
-let ShivWalletSchema = new mongoose.Schema({
+let CoinyeWestWalletSchema = new mongoose.Schema({
   owner: {
     type: Schema.Types.ObjectId,
     ref: 'User'
@@ -87,14 +87,14 @@ let ShivWalletSchema = new mongoose.Schema({
 });
 
 
-ShivWalletSchema.statics.getByUser = (user) => {
-  return queryify(ShivWallet.findOne({owner: user}));
+CoinyeWestWalletSchema.statics.getByUser = (user) => {
+  return queryify(CoinyeWestWallet.findOne({owner: user}));
 }
 
 
-ShivWalletSchema.statics.getAll = (user) => {
+CoinyeWestWalletSchema.statics.getAll = (user) => {
   return queryify(
-    ShivWallet.find({})
+    CoinyeWestWallet.find({})
                     .populate('owner')
                     .sort({balance: -1})
                     .limit(10)
@@ -102,7 +102,7 @@ ShivWalletSchema.statics.getAll = (user) => {
 }
 
 
-let ShivWallet = mongoose.model('ShivWallet', ShivWalletSchema);
+let CoinyeWestWallet = mongoose.model('CoinyeWestWallet', CoinyeWestWalletSchema);
 
 
-module.exports = ShivWallet;
+module.exports = CoinyeWestWallet;
