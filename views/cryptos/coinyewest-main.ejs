@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+  <h3>Buy Coinye West!</h3>
+
+  <% if(msg) { %>
+    <marquee><h4 style='color:green'><%= msg %></h4></marquee>
+  <% } %>
+
+  <% if(user) { %>
+
+    Hi <%= user.username %>! Buy Coinye West Coin today!
+
+    <a href="/cryptos/MONE/users">Be like these people</a>.
+
+
+    <br><br>
+    <% if(locals.wallet) { %>
+      You have: <b><%= wallet.balance %> Coinye West Coin</b>.
+    <% } %>
+
+    <hr>
+
+    <h4>Trades:</h4>
+    <ul>
+      <li>
+        <form method="POST" action="/cryptos/MONE">
+          <input type="hidden" name="trade" value="dogetocoinye"/>
+          <input type="submit" value="Buy 2 Coinye West Coin with 1 Doge Coin"/>
+        </form>
+      </li>
+    </ul>
+        <ul>
+      <li>
+        <form method="POST" action="/cryptos/MONE">
+          <input type="hidden" name="trade" value="convergenttocoinye"/>
+          <input type="submit" value="Buy 2 Coinye West Coin with 1 Convergent Coin"/>
+        </form>
+      </li>
+    </ul>
+
+  <% } else { %>
+
+    <b>You need to be logged in to be here.<b>
+
+  <% } %>
+
+</body>
+
+</html>

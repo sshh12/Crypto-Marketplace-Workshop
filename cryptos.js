@@ -13,10 +13,14 @@ const CRYPTOS = [
     symbol: 'DOGE',
     model: require('./models/cryptos/doge-wallet'),
     router: require('./routes/cryptos/doge-routes')
+  },
+  {
+    name: 'CoinyeWest',
+    symbol: 'MONE',
+    model: require('./models/cryptos/coinyewest-wallet'),
+    router: require('./routes/cryptos/coinyewest-routes')
   }
-  /*
-  { your crypto here }
-  */
+
 ]
 
 module.exports = CRYPTOS;
