@@ -3,9 +3,9 @@
 let express = require('express');
 let router = express.Router();
 
-let DogeWallet = require('../../models/cryptos/harsh-wallet');
+let HarshWallet = require('../../models/cryptos/harsh-wallet');
 
-router.get('/cryptos/HARSH', async (req, res) => {
+router.get('/cryptos/HARC', async (req, res) => {
 
   let user = req.session.user;
   let wallet = await HarshWallet.getByUser(req.session.user);
@@ -18,7 +18,7 @@ router.get('/cryptos/HARSH', async (req, res) => {
         if (error) {
           res.redirect('/?msg=' + error.toString());
         } else {
-          return res.redirect('/cryptos/HARSH?msg=Wallet created!');
+          return res.redirect('/cryptos/HARC?msg=Wallet created!');
         }
       });
   } else {

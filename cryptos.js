@@ -32,18 +32,12 @@ const CRYPTOS = [
     model: require('./models/cryptos/my-wallet'),
     router: require('./routes/cryptos/my-routes')
   },
-  {
-    name: 'Fizzcoin',
-    symbol: 'FIZZ',
-    model: require('./models/cryptos/FizzcoinWallet'),
-    router: require('./routes/cryptos/fizzcoin')
-  },
-  {
-    name: 'SavvyCoin',
-    symbol: 'SAVVY',
-    model: require('./models/cryptos/savvy-wallet'),
-    router: require('./routes/cryptos/savvy-routes copy')
-  }
+  // {
+  //   name: 'Fizzcoin',
+  //   symbol: 'FIZZ',
+  //   model: require('./models/cryptos/FizzWallet'),
+  //   router: require('./routes/cryptos/fizzcoin')
+  // },
 ]
 
 module.exports = CRYPTOS;

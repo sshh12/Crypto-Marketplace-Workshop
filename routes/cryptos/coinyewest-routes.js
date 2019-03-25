@@ -49,11 +49,11 @@ router.get('/cryptos/MONE', async (req, res) => {
 })
 
 
-router.get('/cryptos/MONE/users', async (req, res, next) => {
-  let wallets = await CoinyeWestWallet.getAll();
-  let users = wallets.map((w) => w.owner);
-  return res.render('cryptos/convergent-users', {users: users});
-});
+// router.get('/cryptos/MONE/users', async (req, res, next) => {
+//   let wallets = await CoinyeWestWallet.getAll();
+//   let users = wallets.map((w) => w.owner);
+//   return res.render('cryptos/convergent-users', {users: users});
+// });
 
 
 router.post('/cryptos/MONE', async (req, res) => {
